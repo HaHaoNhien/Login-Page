@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url(../img/background.jpg) no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+}
+.center h1 {
+  text-align: center;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+.center form {
+  padding: 0 40px 40px 40px;
+  box-sizing: border-box;
+  color: #000;
+  font-weight: bold;
+}
+.center form input {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 0.5px solid #000000;
+  height: 30px;
+}
+.center form input:focus {
+  outline: none;
+  border: 0.5px solid #feab1b;
+}
+.center form .ForgotPassword {
+  text-align: right;
+  cursor: pointer;
+  padding-bottom: 20px;
+  font-style: italic;
+}
+.center form .ForgotPassword a {
+  text-decoration: none;
+  color: #000;
+}
+.center form .ForgotPassword:hover {
+  text-decoration: underline;
+  color: #feab1b;
+}
+.center form button {
+  width: 100%;
+  font-weight: bolder;
+  background-color: #000000;
+  border: 0.5px solid #000000;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.center form button:hover {
+  background-color: #feab1b;
+  color: #ffffff;
+}
+.center form .signup-link a {
+  color: #feab1b;
+  font-style: italic;
+}
+.center form .signup-link a:hover {
+  text-decoration: underline;
+  color: #15387d;
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-position: 0pc 0px;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 700px) {
+  body {
+    background-position: -170px 0px;
+    background-size: cover;
+  }
+  .center {
+    width: 80%;
+  }
+}
